@@ -26,7 +26,7 @@ export default function MainPage() {
 
     <div className="about-me-description">
       <h1 className="nameh1">Ivan Piceno</h1>
-      <h2 className="goals-about">I am an aspiring software engineer</h2>
+      <h2 className="goals-about">Full-Stack Developer</h2>
     </div>
     
     {/* Skills */}
