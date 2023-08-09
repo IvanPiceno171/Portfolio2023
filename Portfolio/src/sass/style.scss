@@ -31,10 +31,17 @@
 }
 .nav-li {
   padding-right: 3rem;
+  list-style: circle;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
 }
-.nav-li:hover {
-  text-decoration: underline;
-}
+
 @media all and (max-device-width: 700px) {
   #nav-ol {
     flex-direction: column;
@@ -44,11 +51,14 @@
 }
 
 /*  about me description and img */
-.about-me-description {
+.intro-description {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
+  .goals-intro{
+    font-size: 4em;
+    z-index: 100;
+  }
 }
 
 .animate__flipInY {
@@ -236,7 +246,7 @@ body {
 }
 /* Footer cSS */
 .foot {
-  // margin-top: 30%; // as screen gets smaller / ascend percentage
+  margin-top: 20%; // as screen gets smaller / ascend percentage
 }
 .foot-description {
   display: flex;
