@@ -1,27 +1,15 @@
 import React from "react";
 import Projects from "./Projects";
+import Navbar from "./Navbar";
 
 export default function MainPage() {
   return (
     <div className="main-page">
-      <nav>
-        <ol id="nav-ol">
-          <li className="nav-li">About</li>
-          <li className="nav-li">Projects</li>
-          <li className="nav-li">Skills</li>
-        </ol>
-      </nav>
+      <Navbar />
+      <br />
+      <hr />
+      <br />
 
-      <a className="big-logo" href="/index.html">
-        <img
-          src="/img/ivan-logo-1 copy.png"
-          alt=""
-          id="logo"
-          style={{ width: "15rem" }}
-        />
-      </a>
-
-      {/* <div className="container-social-media animate__flipInY"> */}
       <div className="container-social-media animate__backInRight">
         <ul className="social-ul">
           <li className="social-li">
@@ -42,10 +30,17 @@ export default function MainPage() {
         </ul>
       </div>
 
-      <div className="about-me-description">
+      <div className="intro-description">
         <h1 className="nameh1">Ivan Piceno</h1>
-        <h2 className="goals-about animate__hinge">Full-Stack Developer</h2>
+        <p>
+         insert quote here...
+        </p>
+        {/* <h2 className="goals-about animate__hinge">Full-Stack Developer</h2> */}
+        <h2 className="goals-intro ">Full-Stack Developer</h2>
       </div>
+
+      {/* About section */}
+      <h1>about</h1>
 
       <Projects />
 
